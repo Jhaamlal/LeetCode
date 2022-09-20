@@ -28,4 +28,4 @@ public class MountainPeak {
 }
 
 // Link question
-// https://leetcode.com/problems/peak-index-in-a-mountain-array/submissions/
+// https://leetcode.com/problems/peak-index-in-a-mountain-array/
