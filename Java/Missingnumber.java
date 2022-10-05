@@ -8,12 +8,12 @@ public class Missingnumber {
     // Will use Cyclic sort to solve the issue for learning purpose
     public static void main(String[] args) {
         int[] nums = { 9, 6, 4, 2, 3, 5, 7, 0, 1 };
-        int number = missingNumber(nums);
+        int number = missNumber(nums);
         System.out.println(number);
 
     }
 
-    public static int missingNumber(int[] nums) {
+    public static int missingNumber(Integer nums[]) {
         // length of array
         // Then while loop to check
         // initite the integer for the element
@@ -48,18 +48,17 @@ public class Missingnumber {
 
     // better solution of the things
 
-    // public static int missNumber(int[] nums) {
-    // List<Integer> list = Arrays.asList(nums);
-    // System.out.println(list);
-    // for (int i = 0; i < nums.length; i++) {
-    // System.out.println(list.contains(i));
-    // if (list.contains(i)) {
+    public static int missNumber(int[] nums) {
+        List list = Arrays.asList(nums);
+        for (int i = 1; i < nums.length; i++) {
+            if (Arrays.asList(nums).contains(i)) {
+                System.out.println(list);
 
-    // } else {
-    // return i;
-    // }
-    // }
-    // return nums.length;
-    // }
+            } else {
+                System.out.println(i);
+            }
+        }
+        return nums.length;
+    }
 
 }
